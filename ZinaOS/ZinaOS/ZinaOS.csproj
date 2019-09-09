@@ -25,7 +25,6 @@
 
     <ItemGroup>
       <Folder Include="ZinaOS\Core\" />
-      <Folder Include="ZinaOS\Shell\" />
     </ItemGroup>
 
 </Project>

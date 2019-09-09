@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chlwl\\source\\repos\\ZinaOS\\ZinaOS\\ZinaOS.csproj": {}
+    "C:\\Users\\chlwl\\source\\repos\\URK96\\ZinaOS\\ZinaOS\\ZinaOS\\ZinaOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chlwl\\source\\repos\\ZinaOS\\ZinaOS\\ZinaOS.csproj": {
+    "C:\\Users\\chlwl\\source\\repos\\URK96\\ZinaOS\\ZinaOS\\ZinaOS\\ZinaOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chlwl\\source\\repos\\ZinaOS\\ZinaOS\\ZinaOS.csproj",
+        "projectUniqueName": "C:\\Users\\chlwl\\source\\repos\\URK96\\ZinaOS\\ZinaOS\\ZinaOS\\ZinaOS.csproj",
         "projectName": "ZinaOS",
-        "projectPath": "C:\\Users\\chlwl\\source\\repos\\ZinaOS\\ZinaOS\\ZinaOS.csproj",
+        "projectPath": "C:\\Users\\chlwl\\source\\repos\\URK96\\ZinaOS\\ZinaOS\\ZinaOS\\ZinaOS.csproj",
         "packagesPath": "C:\\Users\\chlwl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chlwl\\source\\repos\\ZinaOS\\ZinaOS\\obj\\",
+        "outputPath": "C:\\Users\\chlwl\\source\\repos\\URK96\\ZinaOS\\ZinaOS\\ZinaOS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

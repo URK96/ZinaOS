@@ -7,3 +7,12 @@ C:\Users\chlwl\source\repos\ZinaOS\ZinaOS\obj\Debug\netcoreapp2.0\cosmos\ZinaOS.
 C:\Users\chlwl\source\repos\ZinaOS\ZinaOS\obj\Debug\netcoreapp2.0\cosmos\ZinaOS.AssemblyInfo.cs
 C:\Users\chlwl\source\repos\ZinaOS\ZinaOS\obj\Debug\netcoreapp2.0\cosmos\ZinaOS.dll
 C:\Users\chlwl\source\repos\ZinaOS\ZinaOS\obj\Debug\netcoreapp2.0\cosmos\ZinaOS.pdb
+C:\Users\chlwl\source\repos\URK96\ZinaOS\ZinaOS\ZinaOS\bin\Debug\netcoreapp2.0\cosmos\ZinaOS.deps.json
+C:\Users\chlwl\source\repos\URK96\ZinaOS\ZinaOS\ZinaOS\bin\Debug\netcoreapp2.0\cosmos\ZinaOS.dll
+C:\Users\chlwl\source\repos\URK96\ZinaOS\ZinaOS\ZinaOS\bin\Debug\netcoreapp2.0\cosmos\ZinaOS.pdb
+C:\Users\chlwl\source\repos\URK96\ZinaOS\ZinaOS\ZinaOS\obj\Debug\netcoreapp2.0\cosmos\ZinaOS.csprojAssemblyReference.cache
+C:\Users\chlwl\source\repos\URK96\ZinaOS\ZinaOS\ZinaOS\obj\Debug\netcoreapp2.0\cosmos\ZinaOS.csproj.CoreCompileInputs.cache
+C:\Users\chlwl\source\repos\URK96\ZinaOS\ZinaOS\ZinaOS\obj\Debug\netcoreapp2.0\cosmos\ZinaOS.AssemblyInfoInputs.cache
+C:\Users\chlwl\source\repos\URK96\ZinaOS\ZinaOS\ZinaOS\obj\Debug\netcoreapp2.0\cosmos\ZinaOS.AssemblyInfo.cs
+C:\Users\chlwl\source\repos\URK96\ZinaOS\ZinaOS\ZinaOS\obj\Debug\netcoreapp2.0\cosmos\ZinaOS.dll
+C:\Users\chlwl\source\repos\URK96\ZinaOS\ZinaOS\ZinaOS\obj\Debug\netcoreapp2.0\cosmos\ZinaOS.pdb
