@@ -10,5 +10,15 @@ namespace ZinaShell
         internal static int shellCount { get; set; }
 
         internal static readonly string shellVer = "20190909";
+
+        internal static readonly string[] commandList =
+        {
+            "clear",
+            "makedir",
+            "remove",
+            "changedir",
+            "listdir",
+            "version"
+        };
     }
 }
