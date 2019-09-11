@@ -72,8 +72,13 @@ namespace ZinaShell
                 case "listdir":
                     ListDirContents();
                     break;
+                case "cat":
+                case "get":
+                    ReadFileContent(commandToken[1]);
+                    break;
                 case "ver":
                 case "version":
+                    ShellVerInfo();
                     break;
             }
         }

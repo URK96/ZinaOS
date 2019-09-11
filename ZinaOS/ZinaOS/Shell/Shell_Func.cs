@@ -7,6 +7,8 @@ namespace ZinaShell
 {
     internal static class ZinaShellFunc
     {
+        // Print Shell Functions
+
         internal static void ShellWrite(string text, ConsoleColor textColor = ConsoleColor.White)
         {
             Console.ForegroundColor = textColor;
@@ -39,16 +41,17 @@ namespace ZinaShell
         internal static void ShellVerInfo()
         {
             ShellWriteLine("ZinaShell - Shell for ZinaOS");
-            ShellWriteLine("ver.")
+            ShellWriteLine($"ver. {Set.shellVer} alpha");
         }
 
-
+        
+        // Default Shell Command Functions
 
         internal static void MakeDir(string dirPath)
         {
             try
             {
-                Directory(Path.Combine(Set.nowPath, dirPath));
+                Directory.CreateDirectory(Path.Combine(Set.nowPath, dirPath));
             }
             catch (Exception ex)
             {
@@ -96,10 +99,10 @@ namespace ZinaShell
             {
                 if (path == "..")
                 {
-                    if (Path.IsPathRooted(Set.nowPath))
+                    if (Path.GetPathRoot(path) == path)
                         ShellWriteError("Working directory is root!");
                     else
-                        Set.nowPath = Directory.GetParent().ToString();
+                        Set.nowPath = Directory.GetParent(Set.nowPath).ToString();
                 }
                 else if (string.IsNullOrWhiteSpace(path))
                     Set.nowPath = Path.GetPathRoot(Set.nowPath);
@@ -137,10 +140,27 @@ namespace ZinaShell
 
                 foreach (FileInfo info in subFileInfos)
                     ShellWrite($"{info.Name}\t", ConsoleColor.White);
+
+                ShellWriteLine("");
             }
             catch (Exception ex)
             {
                 ShellWriteError(ex.Message);
+            }
+        }
+
+        internal static void ReadFileContent(string fileName)
+        {
+            string path = Path.Combine(Set.nowPath, fileName);
+
+            try
+            {
+                using (StreamReader sr = new StreamReader(new FileStream(path, FileMode.Open, FileAccess.Read)))
+                    ShellWriteLine(sr.ReadToEnd());
+            }
+            catch (Exception ex)
+            {
+                ShellWriteError("Cannot read file content!");
             }
         }
     }

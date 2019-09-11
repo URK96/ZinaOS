@@ -19,7 +19,6 @@ namespace ZinaOS
                 Sys.FileSystem.VFS.VFSManager.RegisterVFS(fs);
 
                 Console.WriteLine("ZinaOS booted completely!");
-
             }
             catch (Exception ex)
             {
@@ -33,6 +32,7 @@ namespace ZinaOS
             {
                 Console.Clear();
                 Console.WriteLine("Welcome to ZinaOS alpha");
+
                 zshell = new ZinaShellCore();
                 zshell.RunShell();
             }
