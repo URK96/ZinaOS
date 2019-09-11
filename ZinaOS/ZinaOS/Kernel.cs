@@ -18,15 +18,7 @@ namespace ZinaOS
                 var fs = new Sys.FileSystem.CosmosVFS();
                 Sys.FileSystem.VFS.VFSManager.RegisterVFS(fs);
 
-                Thread.Sleep(1000);
-
                 Console.WriteLine("ZinaOS booted completely!");
-
-                Thread.Sleep(1000);
-
-                Console.Clear();
-                Console.WriteLine("Welcome to ZinaOS alpha");
-                zshell = new ZinaShellCore();
             }
             catch (Exception ex)
             {
@@ -36,7 +28,18 @@ namespace ZinaOS
 
         protected override void Run()
         {
-            zshell.RunShell();
+            try
+            {
+                Console.Clear();
+                Console.WriteLine("Welcome to ZinaOS alpha");
+
+                zshell = new ZinaShellCore();
+                zshell.RunShell();
+            }
+            catch (Exception ex)
+            {
+                Console.Write(ex.Message);
+            }
         }
     }
 }

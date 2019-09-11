@@ -34,16 +34,53 @@ namespace ZinaShell
             }
         }
 
-        void ReadCommand()
+        private void ReadCommand()
         {
             string command = "";
-
+            
             command = Console.ReadLine();
 
             if (string.IsNullOrWhiteSpace(command))
                 return;
 
-            ShellWriteLine(command);
+            string[] commandToken = command.Split(" ");
+
+            switch (commandToken[0])
+            {
+                case "cls":
+                case "clear":
+                    ShellClear();
+                    break;
+                case "mkdir":
+                case "makedir":
+                    MakeDir(commandToken[1]);
+                    break;
+                case "rm":
+                case "remove":
+                    Remove(commandToken[1]);
+                    break;
+                case "rmdir":
+                case "removedir":
+                    RemoveDir(commandToken[1], true);
+                    break;
+                case "cd":
+                case "changedir":
+                    ChangeDir(commandToken[1]);
+                    break;
+                case "ls":
+                case "dir":
+                case "listdir":
+                    ListDirContents();
+                    break;
+                case "cat":
+                case "get":
+                    ReadFileContent(commandToken[1]);
+                    break;
+                case "ver":
+                case "version":
+                    ShellVerInfo();
+                    break;
+            }
         }
     }
 }
